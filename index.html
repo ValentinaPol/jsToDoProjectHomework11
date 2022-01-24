@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <h1 class="text-center">To-Do application</h1>
+
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-8">
+                <input type="text" class="form-control" id="inputTask" placeholder="Input task">
+            </div>
+            <button class="btn btn-primary col-4" id="btn-add">Add task</button>
+        </div>
+
+        <ul class="row g-3" id="list">
+            <li><div class="task-name">Task1</div> <span>Delete</span></li>
+            <li><div class="task-name">Task2</div> <span>Delete</span></li>
+            <li><div class="task-name">Task3</div> <span>Delete</span></li>
+           
+        </ul>
+
+        <div class="counter">
+            <p>Количество активных задач: <span id="counter-active">0</span></p>
+            <p>Количество неактивных задач: <span id="counter-inactive">0</span> </p>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row g-3" id="modal">
+            <div class="col-8">
+                <div class="modal-body">
+                    <div id="close" class="hide">
+                        x
+                    </div>
+                    <p class="modal-message">Разработчик: Полянская Валентина Александровна</p>
+                </div>
+                <button class="btn btn-primary col-4" id="btn-modal">Информация о себе</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./script/script.js"></script>
+    
+</body>
+
+</html>
