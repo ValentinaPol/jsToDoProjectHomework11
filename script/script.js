@@ -15,7 +15,7 @@ function createTask(){
     var inputValue = inputData.value;
     inputData.value = '';
 
-    if (inputValue !== ''){
+    if (inputValue.trim() !== ''){
         var newLi = document.createElement('li');
         var taskName = document.createElement('div');
 
